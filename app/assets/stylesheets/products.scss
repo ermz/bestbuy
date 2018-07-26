@@ -1,0 +1,73 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.index-product-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 220px;
+  max-width: 225px;
+  border: 0.5px black solid;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.index-product-name {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Markazi Text", sans-serif;
+  font-size: 1.3em;
+}
+
+.index-product-info {
+  padding-bottom: 19px;
+}
+
+.index-product-price {
+  margin-left: 40px;
+  display: inline-block;
+  padding-right: 4px;
+}
+
+button {
+  outline: none !important;
+}
+
+.add-to-cart-btn {
+  border-radius: 7px;
+  position: relative;
+  background-color: #FF5335;
+  border: none;
+  font-size: 1.3em;
+  color: #FFFFFF;
+  padding: 1px;
+  width: 76px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:after {
+  content: "";
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.add-to-cart-btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}

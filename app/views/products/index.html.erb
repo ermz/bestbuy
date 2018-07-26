@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Products</h1>
+
+<div class="container">
+  <div class="row">
+    <% @products.each do |product| %>
+    <div class="col-sm-3">
+      <%= link_to(image_tag(product.image_url, class: "img-fluid index-product-img"), product_path(:id => product.id), :method => :get) %>
+      <div class="index-product-name">
+        <%= product.name %>
+      </div>
+      <div class="index-product-info">
+        <div class="index-product-price">
+          &#128178;<%= product.price %>
+        </div>
+        <button class="btn add-to-cart-btn">
+          <span class="glyphicon glyphicon-plus"></span>
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+        </button>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
