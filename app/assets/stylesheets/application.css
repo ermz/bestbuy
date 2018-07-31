@@ -17,3 +17,33 @@
 .yield-div {
   padding: 0px 85px 0px 85px;
 }
+
+nav {
+  background-color: #494f53;
+  color: #EFEBD8;
+  width: 100%;
+}
+
+.nav-tag p{
+  display: inline-block;
+}
+
+.nav-options li{
+  display: inline-block;
+}
+
+footer {
+  background-color: #494f53;
+  color: #EFEBD8;
+  width: 100%;
+}
+
+.links-holder {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.links-holder li{
+  margin: 0 auto;
+  display: inline-block;
+}

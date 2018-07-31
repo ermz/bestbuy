@@ -24,11 +24,20 @@
 
   <body>
     <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
+      <div class='nav-tag'>
+        <p>
+          Llama Records
+        </p>
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <div class="trial-div">
+        <ul class="nav-options">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "About", simple_pages_about_path %></li>
+          <li><%= link_to "Contact", simple_pages_contact_path %></li>
+        </ul>
+      </div>
     </nav>
 
     <div class="yield-div">
@@ -36,7 +45,16 @@
     </div>
 
     <footer>
-      hello i'm a foot
+      <div class="footer-links">
+        <ul class="links-holder">
+          <li><%= link_to "Facebook", "#" %></li>
+          <li><%= link_to "Twitter", "#" %></li>
+          <li><%= link_to "Instagram", "#" %></li>
+        </ul>
+      </div>
+      <div class="">
+        something will go here
+      </div>
     </footer>
   </body>
 </html>
