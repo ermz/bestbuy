@@ -4,23 +4,9 @@
 
 <div class="container">
   <div class="row">
-    <% @products.each do |product| %>
-    <div class="col-sm-3">
-      <%= link_to(image_tag(product.image_url, class: "img-fluid index-product-img"), product_path(:id => product.id), :method => :get) %>
-      <div class="index-product-name">
-        <%= product.name %>
-      </div>
-      <div class="index-product-info">
-        <div class="index-product-price">
-          &#128178;<%= product.price %>
-        </div>
-        <button class="btn add-to-cart-btn">
-          <span class="glyphicon glyphicon-plus"></span>
-          <span class="glyphicon glyphicon-shopping-cart"></span>
-        </button>
-      </div>
-    </div>
-    <% end %>
+    <!--The following line represets the @products array being iterrated through
+    the _product partial(No need for .each method, Rails does everything for you)-->
+    <%= render @products %>
   </div>
 </div>
 
