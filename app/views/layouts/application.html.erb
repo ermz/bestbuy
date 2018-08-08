@@ -28,8 +28,11 @@
         <p>
           Llama Records
         </p>
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+          <%= form.label :q, 'Search for:' %>
+          <%= form.text_field :q, id: 'q', value: params[:q] %>
+          <%= form.submit 'Search' %>
+        <% end %>
       </div>
       <div class="trial-div">
         <ul class="nav-options">
