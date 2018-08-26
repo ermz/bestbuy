@@ -30,5 +30,13 @@
   <%= @product.price %>
 </p>
 
+<p>
+  <div class="rating"></div>
+</p>
+
+<%= render 'new_comment' %>
+
+<%= render 'comments' %>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
