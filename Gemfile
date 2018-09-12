@@ -44,6 +44,8 @@ group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot_rails', '~> 4.0'
 end
 
 group :development do
@@ -64,3 +66,7 @@ gem 'devise'
 gem 'cancancan', '~> 1.10'
 
 gem 'will_paginate', '~> 3.1.0'
+
+gem 'rails-controller-testing'
+
+gem 'stripe'

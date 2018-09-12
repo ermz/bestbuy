@@ -7,7 +7,7 @@ class Ability
     can :manage, Comment, id: user.id
     can :read, [Comment, Order, Product]
 
-    if user.present & user.admin?
+    if user.present? & user.admin?
       can :manage, :all
     end
   end
