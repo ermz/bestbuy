@@ -6,7 +6,9 @@
   <div class="row">
     <!--The following line represets the @products array being iterrated through
     the _product partial(No need for .each method, Rails does everything for you)-->
-    <%= render @products %>
+    <% cache(cache_key_for_products) do %>
+      <%= render @products %>
+    <% end %>
   </div>
 </div>
 

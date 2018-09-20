@@ -1,40 +1,44 @@
 <p id="notice"><%= notice %></p>
 
-<%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: @product.image_url) %>
+<% cache @product do %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+  <%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: @product.image_url) %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @product.name %>
+  </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @product.description %>
+  </p>
 
-<p>
-  <strong>Condition:</strong>
-  <%= @product.condition %>
-</p>
+  <p>
+    <strong>Image url:</strong>
+    <%= @product.image_url %>
+  </p>
 
-<p>
-  <strong>Dimension:</strong>
-  <%= @product.dimension %>
-</p>
+  <p>
+    <strong>Condition:</strong>
+    <%= @product.condition %>
+  </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+  <p>
+    <strong>Dimension:</strong>
+    <%= @product.dimension %>
+  </p>
 
-<p>
-  Average Rating: <div class="rated" data-score="<%=@product.average_rating %>"></div>
-</p>
+  <p>
+    <strong>Price:</strong>
+    <%= @product.price %>
+  </p>
+
+  <p>
+    Average Rating: <div class="rated average-rating" data-score="<%=@product.average_rating %>"></div>
+  </p>
+
+<% end %>
 
 <%= form_with(url: '/payments/create') do |form| %>
   <%= hidden_field_tag(:product_id, @product.id) %>
