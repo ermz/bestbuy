@@ -1,0 +1,14 @@
+<div class="sec-nav-div">
+  <div class="row sec-nav">
+    <span class="col-4"><%= link_to "| Home |", root_path, class: "sec-nav-link" %></span>
+    <span class="col-4"><%= link_to "| Products |", products_path %></span>
+    <span class="col-4"><%= link_to "| Contact |", simple_pages_contact_path %></span>
+  </div>
+
+  <div class="sec-nav-search">
+    <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+    <%= form.text_field :q, id: 'q', value: params[:q] %>
+    <%= form.submit 'Search' %>
+    <% end %>
+  </div>
+</div>

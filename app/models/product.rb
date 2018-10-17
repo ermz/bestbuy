@@ -20,6 +20,10 @@ class Product < ApplicationRecord
     comments.rating_asc.first
   end
 
+  def comment_count
+    comments.length
+  end
+
   def average_rating
     comments.average(:rating).to_f
   end

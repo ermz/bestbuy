@@ -2,50 +2,62 @@
 
 <% cache @product do %>
 
-  <%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: @product.image_url) %>
+  <div class="row">
 
-  <p>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  </p>
+    <div class="col-sm-12 col-md-7 product-show-img">
+    <%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: @product.image_url) %>
+    </div>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @product.description %>
-  </p>
+    <div class="col-sm-12 col-md-5 product-info">
 
-  <p>
-    <strong>Image url:</strong>
-    <%= @product.image_url %>
-  </p>
+      <div class="product-show-name">
+          <%= @product.name %>
+      </div>
 
-  <p>
-    <strong>Condition:</strong>
-    <%= @product.condition %>
-  </p>
 
-  <p>
-    <strong>Dimension:</strong>
-    <%= @product.dimension %>
-  </p>
+      <div class="rated average-rating" data-score="<%=@product.average_rating %>">Out of <%= @product.comment_count %> </div>
 
-  <p>
-    <strong>Price:</strong>
-    <%= @product.price %>
-  </p>
+      <div class="product-show-buy row">
+        <div class="col-sm-6">
+          <p>
+            Condition:
+            <strong><%= @product.condition %></strong>
+          </p>
+          <p>
+            Price:
+            <strong><%= @product.price %></strong>
+          </p>
+        </div>
+        <span class="col-sm-6 payment-button">
+          <%= form_with(url: '/payments/create') do |form| %>
+          <%= hidden_field_tag(:product_id, @product.id) %>
+          <%= render partial: "shared/stripe_checkout_button" %>
+          <% end %>
+        </span>
 
-  <p>
-    Average Rating: <div class="rated average-rating" data-score="<%=@product.average_rating %>"></div>
-  </p>
+      </div>
+
+      <p>
+        <u>Description:</u>
+        <%= @product.description %>
+      </p>
+
+
+      <p>
+        <u>Dimension:</u>
+        <%= @product.dimension %>
+      </p>
+
+
+    </div>
+  </div>
 
 <% end %>
 
-<%= form_with(url: '/payments/create') do |form| %>
-  <%= hidden_field_tag(:product_id, @product.id) %>
-  <%= render partial: "shared/stripe_checkout_button" %>
-<% end %>
 
 <%= render 'new_comment' %>
+
+<div class="alert alert-info" style="disply:none" role="alert">A new comment was posted!</div>
 
 <%= render 'comments' %>
 

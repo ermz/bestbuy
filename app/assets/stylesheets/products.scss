@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* ==== index CSS ==== */
+
 .index-product-img {
   display: block;
   margin: 0 auto;
@@ -70,4 +72,99 @@ button {
   margin: 0;
   opacity: 1;
   transition: 0s;
+}
+
+
+.sec-nav-div {
+  display: none;
+}
+
+.sec-nav {
+  background-color: #494f53;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-4 {
+  margin: 10px 0px;
+  padding: 0px !important;
+  text-align: center;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.sec-nav-link {
+  margin: 10px;
+}
+
+.sec-nav-search {
+  text-align: center;
+  padding: 3px 0px 15px 0px;
+}
+
+.sec-nav-search input#q {
+  width: 200px;
+  border-radius: 25px;
+}
+
+.sec-nav-search input[type="submit" i] {
+  color: white;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: #dd571c;
+}
+
+/* ==== show CSS ==== */
+
+.product-show-img img{
+  display: block;
+  margin: 0 auto;
+}
+
+.product-show-name {
+  width: 150px;
+  background-color: #dd571c;
+  color: white;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.product-info {
+  width: 350px;
+}
+.average-rating {
+  font-family: 'K2D', sans-serif;
+  margin-bottom: 35px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted black;
+}
+
+.product-show-buy {
+  background-color: #DCDCDC;
+  margin-bottom: 15px;
+}
+
+.product-show-buy div {
+  text-align: center;
+}
+
+.product-show-buy span{
+  text-align: center;
+}
+
+.payment-button {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-show-buy div {
+    text-align: left;
+  }
+
+  .payment-button {
+    padding: 0px 0px 5px 0px;
+  }
 }

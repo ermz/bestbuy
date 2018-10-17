@@ -20,6 +20,10 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Markazi Text">
 
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|K2D|Lobster|Gleegoo|Molengo" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
@@ -27,33 +31,37 @@
     <nav>
       <div class='nav-tag'>
         <p>
-          Llama Records
+          Llama</br>Records
         </p>
-        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-          <%= form.label :q, 'Search for:' %>
-          <%= form.text_field :q, id: 'q', value: params[:q] %>
-          <%= form.submit 'Search' %>
-        <% end %>
       </div>
       <div class="trial-div">
+
         <ul class="nav-options">
+          <li>
+            <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+            <%= form.text_field :q, id: 'q', value: params[:q] %>
+            <%= form.submit 'Search' %>
+            <% end %>
+          </li>
           <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "About", simple_pages_about_path %></li>
+          <li><%= link_to "Products", products_path %></li>
           <li><%= link_to "Contact", simple_pages_contact_path %></li>
+          <li>
+            <ul class="navbar-nav ml-auto">
+              <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+              </li>
+              <% else %>
+              <li class="nav-item">
+                <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+                <li>
+                  <% end %>
+                </li>
+              </ul>
+            </li>
         </ul>
 
-        <ul class="navbar-nav ml-auto">
-          <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
-          </li>
-          <% else %>
-          <li class="nav-item">
-            <%= link_to('Login', new_user_session_path, class: "nav-link") %>
-          <li>
-          <% end %>
-          </li>
-        </ul>
 
       </div>
     </nav>
@@ -73,13 +81,12 @@
     <footer>
       <div class="footer-links">
         <ul class="links-holder">
-          <li><%= link_to "Facebook", "#" %></li>
-          <li><%= link_to "Twitter", "#" %></li>
-          <li><%= link_to "Instagram", "#" %></li>
+          <li><%= link_to "", "https://www.google.com/", {:class => 'fa fa-google'} %></li>
+          <li><%= link_to "", "https://www.facebook.com/", {:class => 'fa fa-facebook'} %></li>
         </ul>
       </div>
-      <div class="">
-        something will go here
+      <div class="copyright-text">
+        Llama Records-&copy;2018
       </div>
     </footer>
   </body>
