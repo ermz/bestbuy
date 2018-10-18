@@ -1,0 +1,697 @@
+/* ==== index CSS ==== */
+/* line 8, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.index-product-img {
+  display: block;
+  margin: 0 auto;
+  max-height: 220px;
+  max-width: 225px;
+  border: 0.5px black solid;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 18, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.index-product-name {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Markazi Text", sans-serif;
+  font-size: 1.3em;
+}
+
+/* line 27, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.index-product-info {
+  padding-bottom: 19px;
+}
+
+/* line 31, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.index-product-price {
+  margin-left: 40px;
+  display: inline-block;
+  padding-right: 4px;
+}
+
+/* line 37, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+button {
+  outline: none !important;
+}
+
+/* line 41, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.add-to-cart-btn {
+  border-radius: 7px;
+  position: relative;
+  background-color: #FF5335;
+  border: none;
+  font-size: 1.3em;
+  color: #FFFFFF;
+  padding: 1px;
+  width: 76px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* line 58, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.add-to-cart-btn:after {
+  content: "";
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+/* line 71, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.add-to-cart-btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* line 79, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.sec-nav-div {
+  display: none;
+}
+
+/* line 83, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.sec-nav {
+  background-color: #494f53;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 88, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.col-4 {
+  margin: 10px 0px;
+  padding: 0px !important;
+  text-align: center;
+}
+
+/* line 94, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+/* line 99, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.sec-nav-link {
+  margin: 10px;
+}
+
+/* line 103, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.sec-nav-search {
+  text-align: center;
+  padding: 3px 0px 15px 0px;
+}
+
+/* line 108, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.sec-nav-search input#q {
+  width: 200px;
+  border-radius: 25px;
+}
+
+/* line 113, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.sec-nav-search input[type="submit" i] {
+  color: white;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: #dd571c;
+}
+
+/* ==== show CSS ==== */
+/* line 122, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.product-show-img img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 127, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.product-show-name {
+  width: 150px;
+  background-color: #dd571c;
+  color: white;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* line 136, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.product-info {
+  width: 350px;
+}
+
+/* line 139, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.average-rating {
+  font-family: 'K2D', sans-serif;
+  margin-bottom: 35px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted black;
+}
+
+/* line 146, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.product-show-buy {
+  background-color: #DCDCDC;
+  margin-bottom: 15px;
+}
+
+/* line 151, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.product-show-buy div {
+  text-align: center;
+}
+
+/* line 155, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.product-show-buy span {
+  text-align: center;
+}
+
+/* line 159, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+.payment-button {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 164, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+  .product-show-buy div {
+    text-align: left;
+  }
+
+  /* line 168, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/products.scss */
+  .payment-button {
+    padding: 0px 0px 5px 0px;
+  }
+}
+/* line 1, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 3, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.simple-page-title {
+  text-align: center;
+  font-family: 'Molengo', sans-serif;
+  color: white;
+  background-color: #dd571c;
+}
+
+/* line 10, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.sec-nav-div {
+  display: none;
+}
+
+/* line 14, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.sec-nav {
+  background-color: #494f53;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 19, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.col-4 {
+  margin: 10px 0px;
+  padding: 0px !important;
+  text-align: center;
+}
+
+/* line 25, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+/* line 30, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.sec-nav-link {
+  margin: 10px;
+}
+
+/* line 34, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.sec-nav-search {
+  text-align: center;
+  padding: 3px 0px 15px 0px;
+}
+
+/* line 39, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.sec-nav-search input#q {
+  width: 200px;
+  border-radius: 25px;
+}
+
+/* line 44, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.sec-nav-search input[type="submit" i] {
+  color: white;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: #dd571c;
+}
+
+/* line 51, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.banner-div {
+  height: 300px;
+  overflow: hidden;
+}
+
+/* line 56, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.featured-product {
+  overflow: hidden;
+  max-height: 320px;
+  max-width: 500px;
+}
+
+/* line 62, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.featured-product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+/* CSS specifity for custom CSS over Bootstrap CSS */
+/* line 71, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.row .featured-product {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* ==== contact pages ==== */
+/* line 77, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.contact-banner {
+  background-image: url("map-3578213_1920.jpg");
+  height: 400px;
+  width: 100%;
+}
+
+/* line 83, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.contact-banner h1 {
+  font-family: 'Catamaran', sans-serif;
+  text-align: center;
+  width: 175px;
+  margin: 0 auto;
+  background-color: #dd571c;
+  color: white;
+  position: relative;
+  top: 42px;
+  border-radius: 23px;
+  padding: 10px;
+  border: 1px solid #494f53;
+  box-shadow: -1px 1px #494f53, -2px 2px #494f53, -3px 3px #494f53, -4px 4px #494f53, -5px 5px #494f53;
+}
+
+/* line 102, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.contact-form {
+  padding-top: 35px;
+}
+
+/* line 106, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.contact-form div label {
+  color: #dd571c;
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* line 111, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.contact-submit {
+  margin-left: 16px;
+  border: 0.3px solid #494f53;
+  border-radius: 12px;
+  color: white;
+  background-color: #dd571c;
+  box-shadow: -1px 1px #494f53, -2px 2px #494f53, -3px 3px #494f53, -4px 4px #494f53, -5px 5px #494f53;
+}
+
+/* line 124, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.home-submit-div {
+  display: none;
+}
+
+/* line 128, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+.home-submit {
+  border: 0.3px solid #494f53;
+  padding: 2px;
+  margin-left: 3px;
+  border-radius: 12px;
+  color: white;
+  background-color: #dd571c;
+  box-shadow: -1px 1px #494f53, -2px 2px #494f53, -3px 3px #494f53, -4px 4px #494f53, -5px 5px #494f53;
+}
+
+/* ==== CSS media queries ==== */
+@media screen and (max-width: 800px) {
+  /* line 146, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+  .contact-banner {
+    height: 300px;
+  }
+
+  /* line 149, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+  .sec-nav-div {
+    display: contents;
+  }
+
+  /* line 152, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+  .home-submit-div {
+    display: contents;
+  }
+}
+@media screen and (max-width: 420px) {
+  /* line 158, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/simple_pages.scss.erb */
+  .contact-banner {
+    height: 210px;
+  }
+}
+/* devise/sessions/new */
+/* line 8, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/users.scss */
+.login-box {
+  width: 230px;
+  margin: 0 auto;
+  padding: 0px 12px 0px 12px;
+  border: 1px solid black;
+  border-radius: 17%;
+  background-color: #f8f8ff;
+}
+
+/* devise/registration/new */
+/* line 18, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/users.scss */
+.signup-box {
+  width: 230px;
+  margin: 0 auto;
+  padding: 0px 12px 0px 12px;
+  border: 1px solid black;
+  border-radius: 17%;
+  background-color: #f8f8ff;
+}
+
+/* devise/passwords/new */
+/* line 28, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/users.scss */
+.forgotpassword-box {
+  width: 230px;
+  margin: 0 auto;
+  padding: 0px 12px 0px 12px;
+  border: 1px solid black;
+  border-radius: 17%;
+  background-color: #f8f8ff;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+/* line 20, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.yield-div {
+  width: 100;
+  padding: 0px 85px 0px 85px;
+}
+
+/* Nav CSS */
+/* line 27, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+nav {
+  background-color: #494f53;
+  color: black;
+  width: 100%;
+  height: 45px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* line 38, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.nav-tag {
+  display: inline-block;
+  padding-top: 3.5px;
+  padding-left: 95px;
+  color: #dd571c;
+}
+
+/* line 45, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.trial-div {
+  display: inline-block;
+  float: right;
+}
+
+/* line 50, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.nav-tag p {
+  font-family: 'Lobster', sans-serif;
+  font-size: 1.35em;
+  display: inline-block;
+}
+
+/* line 56, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.nav-options li {
+  font-family: 'Catamaran', sans-serif;
+  display: inline-block;
+  padding-right: 11px;
+}
+
+/* line 62, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.nav-options li a {
+  color: #f5f5f5;
+}
+
+/* line 70, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.nav-link {
+  background-color: #dd571c;
+  border-radius: 25px;
+  border: 2px solid #dd571c;
+  padding: 0px !important;
+  margin: 0 auto;
+  position: relative;
+  top: 7px;
+}
+
+/* Footer CSS */
+/* line 82, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+footer {
+  background-color: #494f53;
+  color: #EFEBD8;
+  width: 100%;
+}
+
+/* line 88, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.links-holder {
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 3.5px;
+}
+
+/* line 94, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.links-holder li {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+/* line 99, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.fa {
+  padding: 9px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* line 108, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* line 112, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+a:visited {
+  color: white;
+}
+
+/* line 116, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* line 121, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.fa-google {
+  background: #d44638;
+  color: white;
+}
+
+/* line 125, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+.copyright-text {
+  padding-left: 95px;
+}
+
+/* ==== CSS media queries ==== */
+@media screen and (max-width: 800px) {
+  /* line 134, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+  .yield-div {
+    padding: 0px 65px 0px 65px;
+  }
+
+  /* line 137, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+  .nav-tag {
+    padding-left: 65px;
+  }
+
+  /* line 140, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+  .nav-options {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  /* line 146, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+  .yield-div {
+    padding: 0px 30px 0px 30px;
+  }
+
+  /* line 149, /Users/edsonramirez/repos/bestbuy/app/assets/stylesheets/application.scss */
+  .nav-tag {
+    padding-left: 30px;
+  }
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
