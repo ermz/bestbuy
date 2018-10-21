@@ -96,7 +96,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { host: 'https://bestbuy.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: "https://bestbuy.herokuapp.com" }
 
   config.web_socket_server_url = "wss://bestbuy.herokuapp.com/cable"
   config.action_cable.allowed_request_origins = ['https://bestbuy.herokuapp.com', 'http://bestbuy.herokuapp.com']

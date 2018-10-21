@@ -73,6 +73,11 @@
   padding-right: 0px;
 }
 
+/* code below allows bootstrap grid to work properly on safari, there's something hidden that cause error in safari */
+.row:before, .row:after {
+  display: none !important;
+}
+
 /* ==== contact pages ==== */
 .contact-banner {
   background-image: url("map-3578213_1920.jpg");
